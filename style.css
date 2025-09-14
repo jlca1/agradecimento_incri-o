@@ -1,0 +1,249 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #00a1f5; 
+    color: #00a1f5; 
+}
+
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+header {
+    background-color: white; 
+    color: #ffffff;
+    padding: 20px 0; 
+    text-align: center; 
+    
+}
+
+.header-content {
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+}
+
+.event-logo {
+    max-width: 200px; 
+    height: auto;
+    margin-bottom: 15px; 
+}
+
+@media (max-width: 480px) {
+    .event-logo {
+        max-width: 150px;
+    }
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    letter-spacing: 2px;
+    color: #00a1f5; 
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #0239ff; 
+}
+
+#hero {
+    background: linear-gradient(to right, #f3efee, #ffffff); 
+    padding: 60px 0;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px #fffffff1;
+}
+
+#hero p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+#formulario {
+    background-color: #1e1e1e; 
+    padding: 40px 30px;
+    border-radius: 12px;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 700px;
+    border: 1px solid #2c2c2c;
+    
+}
+
+#formulario h2 {
+    text-align: center;
+    color: #00a1f5; 
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #09f328; 
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 10px;
+    border: 1px solid #00a1f5; 
+    border-radius: 5px;
+    font-size: 16px; 
+    box-sizing: border-box;
+    background-color: #424549; 
+    color: #f2f2f2; 
+    appearance: none;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #00a1f5; 
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    transform: scale(1.1);
+    accent-color: #39f500; 
+    margin-right: 5px;
+}
+
+.checkbox-group label {
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: normal;
+    color: #f2f2f2;
+    font-size: 1em;
+    vertical-align: middle;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    color: green;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button[type="submit"]:hover {
+    background-color: #f2f2f2;
+    transform: translateY(-2px);
+}
+
+button[type="submit"]:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color:#ffffff;
+    color: #00a1f5;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 0.9em;
+    border-top: 5px solid #ffffff;
+}
+
+@media (min-width: 768px) {
+    .header-content {
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center; 
+        width: 100%;
+    }
+
+    .event-logo {
+        order: 2; 
+        margin-left: auto; 
+        margin-right: 0; 
+        max-width: 180px; 
+    }
+
+    .header-content > div { 
+        order: 1; 
+        text-align: center; 
+        flex-grow: 1; 
+    }
+
+    header h1 {
+        font-size: 3.5em;
+        text-align: center; 
+    }
+
+    header p {
+        text-align: center; 
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+    #hero h2 {
+        font-size: 1.8em;
+    }
+    #formulario {
+        margin: 20px auto;
+        padding: 20px;
+    }
+    .form-group input, .form-group select, .form-group textarea {
+        width: 100%;
+    }
+}
+
+.btn-voltar {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff; 
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-voltar:hover {
+    background-color: #0056b3;
+}
